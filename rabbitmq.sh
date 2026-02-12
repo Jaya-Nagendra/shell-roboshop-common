@@ -4,7 +4,7 @@ source ./common.sh
 
 check_root
 
-cp $SCRIPT_DIR/rabbitmq.sh /etc/yum.repos.d/rabbitmq.repo
+cp $SCRIPT_DIR/rabbitmq.repo /etc/yum.repos.d/rabbitmq.repo
 
 dnf install rabbitmq-server -y &>>$LOG_FILE
 VALIDATE $? "Install rabbitmq"
